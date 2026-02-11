@@ -1,18 +1,176 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Clone</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #e3e6e6;
+    }
+
+    /* Navbar */
+    .navbar {
+        background-color: #131921;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ff9900;
+    }
+
+    .search-bar {
+        flex: 1;
+        display: flex;
+        margin: 0 20px;
+    }
+
+    .search-bar input {
+        width: 100%;
+        padding: 8px;
+        border: none;
+    }
+
+    .search-bar button {
+        padding: 8px 12px;
+        background-color: #febd69;
+        border: none;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: url('https://images.unsplash.com/photo-1513708927688-8900eaa7b6f5?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+        height: 300px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .hero-text {
+        background-color: white;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Products */
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .product-card {
+        background-color: white;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .product-card img {
+        max-width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
+
+    .product-card h3 {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .product-card button {
+        background-color: #ffd814;
+        border: 1px solid #fcd200;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #232f3e;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+    }
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;h1&gt;PaaS Platform running on Railway Public Cloud&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;Practical 7 - Public Cloud PaaS Implementation&lt;/p&gt;</span></p>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">amazon</div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search Amazon">
+        <button>Search</button>
+    </div>
+    <div class="nav-links">
+        <div>Sign In</div>
+        <div>Returns</div>
+        <div>Cart</div>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <div class="hero-text">
+        You are on amazon.com. You can also shop on Amazon India for millions of products.
+    </div>
+</div>
+
+<!-- Products Section -->
+<div class="products">
+    <div class="product-card">
+        <h3>Electronics</h3>
+        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35c6?auto=format&fit=crop&w=500&q=60">
+        <button>Shop Now</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Fashion</h3>
+        <img src="https://images.unsplash.com/photo-1520975922284-5c43d6c0f3a7?auto=format&fit=crop&w=500&q=60">
+        <button>Shop Now</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Home & Kitchen</h3>
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=500&q=60">
+        <button>Shop Now</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Books</h3>
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=500&q=60">
+        <button>Shop Now</button>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    © 2026 Amazon Clone | For Educational Purposes Only
+</div>
+
 </body>
 </html>
